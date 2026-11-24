@@ -1,0 +1,11 @@
+Nov 23 03:12:01 web01 sshd[2211]: Invalid user admin from 203.0.113.7 port 51022
+Nov 23 03:12:03 web01 sshd[2211]: Failed password for invalid user admin from 203.0.113.7 port 51022 ssh2
+Nov 23 03:12:09 web01 sshd[2215]: Failed password for root from 203.0.113.7 port 51040 ssh2
+Nov 23 03:12:15 web01 sshd[2219]: Connection closed by authenticating user root 203.0.113.7 port 51066 [preauth]
+Nov 23 08:30:44 web01 sshd[3102]: Accepted publickey for alice from 198.51.100.23 port 60112 ssh2: ED25519 SHA256:abc
+Nov 23 08:30:44 web01 sshd[3102]: pam_unix(sshd:session): session opened for user alice(uid=1001) by (uid=0)
+Nov 23 08:31:02 web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/tail /var/log/nginx/access.log
+Nov 23 08:35:10 web01 app[911]: login ok user=bob@example.com ip=2001:db8::1f4 mac=00:1A:2B:3C:4D:5E
+Nov 23 08:35:12 web01 app[911]: {"username": "carol", "client": "192.168.1.20", "msg": "password reset mailed to carol@corp.example.org"}
+Nov 23 08:40:00 web01 cron[1200]: (alice) CMD (/home/alice/backup.sh --to 10.0.0.5)
+Nov 23 08:41:00 web01 app[911]: version 1.2.3.4.5 build 2026.11.23 started at 08:41:00
